@@ -4,11 +4,13 @@ import csv
 import pandas as pd
 import getMtaData as gmd
 
+# to run: python get_bus_info.py $MTAKEY B52 B52.csv
+
 mtakey = sys.argv[1]
 busline = sys.argv[2]
 output = sys.argv[3]
 
-download = False
+download = True #turn off for testing to avoid pinging the api too much
 
 # download and read the data
 
@@ -20,7 +22,7 @@ with open('bus.json') as data_file:
 
 busses = data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
 
-busses_clean = []
+busses_clean = [[u'Latitude',u'Longitude',u'Stop Name',u'Stop Status']]
 for i in range(len(busses)):
   lat = busses[i]['MonitoredVehicleJourney']['VehicleLocation']['Latitude']
   lon = busses[i]['MonitoredVehicleJourney']['VehicleLocation']['Longitude']
