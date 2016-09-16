@@ -7,7 +7,7 @@ import getMtaData as gmd
 mtakey = sys.argv[1]
 busline = sys.argv[2]
 
-download = False #turn off for testing to avoid pinging the api too much
+download = True #turn off for testing to avoid pinging the api too much
 
 # download and read the data
 
