@@ -6,7 +6,5 @@
 ## Suggestion:</br>
 It will be better if the average trip time of old people and young people can be plotted.</br>
 ## Test:</br>
-\alpha
-It's quite clear that z-test should be used to verify the hypothesis.</br>
-First, calculate average time difference: T_{diff}=T_{old}-T_{young} to check if it's less than zero.</br>
-Then, using z-test $$ z =\frac{T_old-T_young}{\sqrt{\sigma_1/n_1+\sigma_2/n_2}} $$
+It's quite clear that t-test should be used to verify the hypothesis.</br>
+Calculate the value $t=(t1-t2)$
