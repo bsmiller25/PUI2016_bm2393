@@ -8,6 +8,6 @@
 It will be better if the average trip time of old people and young people can be plotted.</br>
 
 ## Test:</br>
-It's quite clear that t-test should be used to verify the hypothesis.</br>
+It's quite clear that z-test should be used to verify the hypothesis.</br>
 Calculate the value t=(t1-t2)/sqrt(sigma1/n1+sigma2/n2).</br>
 where t1 stands for average time of old people, t2 for young people. sigma1 for standard deviation of the old people sample and n1 for the size. etc
